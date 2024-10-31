@@ -27,15 +27,17 @@ function ingresoMaterias() {
             let ponderadoPromedio = MultiplicaCalificacionPeso / sumaPeso;
  
             if (ponderadoPromedio >= 3.5) {
-                console.log("Promedio ponderado " + ponderadoPromedio + "el estudiante Aprueba");
+                alert("Promedio ponderado " + ponderadoPromedio + " el estudiante Aprueba");
             } else if (ponderadoPromedio < 2.5) {
-                console.log("Promedio Ponderado:" + ponderadoPromedio + "El estudiante debe repetir el curso.")
+                alert("Promedio Ponderado:" + ponderadoPromedio + " El estudiante debe repetir el curso.")
  
             } else {
-                console.log("El estudiante no aprueba ni repite");
+                alert("El estudiante no aprueba ni repite");
             }
-       
+
+            console.log("Proceso terminado")
+   
     
  }
- ingresoMaterias();
+ ingresoMaterias(); 
  
